@@ -513,7 +513,7 @@ padding-bottom: 30px;
   padding: 30px;
   padding-top: 16px;
   padding-bottom: 16px;
-  background: url("/images/brew.jpg") center no-repeat;
+  background: url("images/brew.jpg") center no-repeat;
   background-size: 100%;
   font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
   border-radius: 8px;
