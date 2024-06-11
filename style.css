@@ -1,0 +1,604 @@
+*{
+  scrollbar-color: #00754a #f1f1f1;
+  scrollbar-width: thin;
+ 
+}
+body{
+margin:0px;
+padding:0px
+}
+
+/*header*/
+
+.header{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
+width: 100%;
+height: 73px;
+background-color: white;
+padding-top: 0px;
+top: 0px;
+position: sticky;
+z-index: 1000;
+}
+.header img{
+position: relative;
+left: 108px;
+}
+.header input{
+  width: 223px;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #555;
+  background: transparent url("/images/search.svg") no-repeat 13px;
+  padding-left: 37px;
+  position: relative;
+  right: 140px;
+  border-width: 0px;
+  color: darkgray;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 2px 0px, rgba(0, 0, 0, 0.06) 0px 2px 2px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+}
+.header .middle{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding-right: 330px;
+position: relative;
+left: 90px;
+bottom: 7px;
+}
+.header .middle h5{
+  padding: 0px 16px;
+  margin: 16px 0px;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: "SoDo Sans SemiBold";
+}
+.header .user{
+  position: relative;
+  right: 215px;  
+}
+.header .user img{
+  width: 32px;
+  height: 32px;
+
+}
+/*rewards*/
+.rewards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 40px;
+  margin-top: 40px;
+  background-color: #1e3932;
+  height: 6px;
+  margin-top: 0px;
+}
+.rewards h1{
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  left: 10px;
+}
+.rewards button{
+  margin-left: 730px;
+  margin-bottom: 50px;
+  color:rgb(0, 117, 74);
+  border: 1px solid white;
+  background-color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  width: 94px;
+  height: 30px;
+  white-space: nowrap;
+  border-radius: 30px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  top: 20px;
+  right: 65px;
+}
+
+
+/*hero*/
+
+.topbar{
+  height: 100px;
+} 
+
+.recommend {
+  height: 220px;
+  width: 100%;
+  background-color: rgb(237, 235, 233);
+  line-height: 24px;
+  margin-bottom: 40px;
+  margin-top: 24px;
+  padding-bottom: 64px;
+  padding-top: 32px;
+  }
+
+  .recommend .top{
+    display: flex;
+    justify-content: space-around;
+    }
+    .recommend .top p{
+    margin-left: 128px;
+    margin-top: 8px;
+    font-size: 24px;
+    font-family: "SoDo Sans SemiBold";
+    color: rgb(30, 57, 50);
+      white-space: nowrap;
+    }
+    .recommend .top button {
+    margin-left: 730px;
+    margin-bottom: 50px;
+    color:rgb(0, 117, 74);
+    border: none;
+    background-color: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    }
+  .recommend .swiper{
+    width: 1153px;
+    padding: 0px 15px 0px 0px !important;
+   position: relative;
+   left: 20px;
+  }
+.recommend  .swiper-slide {
+        background-color: white;
+        height: 126px;
+        
+        width: 313px !important;
+        border-radius: 8px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 16px;
+        flex-direction: column;
+        margin: 15px;
+        margin-right: 0px;
+}
+
+.recommend  .swiper-slide .topcard{
+  display: flex;
+ }
+ .recommend  .swiper-slide .topinfo{
+   width: 201px;
+   height: 92px;
+   padding-left: 16px;
+   padding-right: 16px;
+   text-align:start ;
+ }
+ .recommend  .swiper-slide .topinfo h6{
+ margin: 0px;
+ height: auto;
+ font-weight: 500;
+ color: rgb(108, 117, 125);
+font-family: Helvetica, sans-serif;
+font-size: 10px;
+ }
+ .recommend  .swiper-slide .topinfo h2{
+   height: 16px;
+   margin: 0px;
+   margin-bottom: 9px;
+   font-size: 14px;
+   font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+   color: black;
+ }
+ .recommend  .swiper-slide .topcard img{
+   height: 80px;
+   width: 80px;
+   border-radius: 8px;
+ }
+ .recommend  .swiper-slide .topinfo img{
+   height: 16px;
+   width: 16px;
+ }
+
+ .recommend  .swiper-slide .bottomcard{
+ display: flex;
+ justify-content:space-between;
+}
+.recommend .swiper-slide .bottomcard button{
+ border-radius: 30px;
+ height: 32px;
+ width: 96px;
+ background-color: rgb(0, 117, 74);
+ color: white;
+ font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+ border-style: none;
+ font-size: 12px;
+ box-shadow: 0 4px 15px #a3a3a3ad;
+
+}
+.recommend .swiper-slide .bottomcard h4{
+ margin: 0px;
+ height: 14px;
+ width: 53px;
+ font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+ margin-top: 16px;
+ font-size: 14px;
+ position: relative;
+ left: 3px;
+ color: black !important;
+ 
+}
+
+
+/*middle part*/
+
+
+.banner .swiper {
+  width: 1142px;
+  height: 220px;
+
+
+  overflow: hidden;
+  
+    padding: 50px 20px 50px 20px !important;
+}
+
+.banner .swiper-slide {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  width: 1142px;
+  border-width: 1px;
+  color: white;
+  border-radius: 8px;
+}
+
+.banner .swiper-slide img {
+  position: relative;
+  right: 63px;
+  top: 10px;
+ 
+}
+.banner .swiper-slide button {
+  width: 200px;
+  height: 49px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+  border-style: none;
+  position: relative;
+  right: 10px;
+} 
+
+.banner .swiper-slide .middle{
+  text-align: start;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  right: 20px;
+  width: 660px;
+}
+
+/*curations*/
+.curations{
+display: flex;
+justify-content: center;
+flex-direction: row;
+align-items: center;
+}
+.curations h4{
+font-size: 14px;
+font-weight: 400;
+margin: 0px;
+font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+margin-bottom: 60px;
+}
+h1{
+  font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+  margin-bottom: 24px;
+ padding-left: 20px;
+}
+.con2{
+  display: flex;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.cont{
+  overflow: hidden;
+  border-radius: 50%;
+}
+.curations img {
+border-radius: 50%;
+border: 2px transparent;
+transition:  0s ease; /* Add transition effect for smooth animation */
+ /* Initial box-shadow */
+}
+.curations img:hover {
+  filter: blur(0.5px);
+  transform: scale(1.025); /* Increase box-shadow on hover */
+  border: 2px solid #00754a;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/*bottom part*/
+  .discover{
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 18px;
+    font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+    color: #1e3932;
+    font-weight: 500;
+  }
+   .swiper {
+      width: 100%;
+      height: 360px;
+      overflow: hidden;
+      
+        padding: 10px 30px 10px 10px !important;
+      
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    
+      border-radius: 8px;
+      border: 1px solid;
+  
+      box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a !important;
+      cursor: pointer;
+      border-color: rgba(0, 0, 0, 0.176);
+      overflow:visible;
+      margin: 0 0px;
+    }
+   
+    .swiper-slide h3,p,button{
+      font-size: 10px;
+      width: 100%;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 167px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .swiper-slide h3{
+      font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+      position: relative;
+      right: 30px;
+      font-size: 14px;
+      color: #1e3932;
+    }
+    .swiper-slide h4 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #6c757d !important;
+      position: relative;
+      right: 70px;
+      bottom: 10px;
+    }
+    .swiper-slide {
+      font-weight: 400;
+    font-size: 11px;
+    font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+    color: grey;
+    text-align: center;
+  }
+  .swiper-slide p{
+width: 314px;
+text-align: left;
+position: relative;
+left:30px;
+font-size: 11px;
+
+  }
+  .swiper-slide .bottom{
+    display: flex;
+    justify-content:space-between;
+  }
+  .bottom button{
+    border-radius: 30px;
+    height: 32px;
+    width: 96px;
+    background-color: rgb(0, 117, 74);
+    color: white;
+    font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+    border-style: none;
+    font-size: 12px;
+      box-shadow: 0 4px 15px #a3a3a3ad;
+      position: relative;
+      top: 10px;
+  right: 20px;
+  }
+  .bottom h5{
+    margin: 0px;
+    height: 14px;
+    width: 53px;
+    font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    color: black;
+  }
+    .swiper-button-prev {
+      background-image: url(/images/left.svg) !important;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center;
+      }
+      
+      .swiper-button-next {
+      background-image: url(/images/right.svg) !important;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center;
+    
+      }
+      
+      .swiper-button-next::after {
+      display: none;
+      }
+      
+      .swiper-button-prev::after {
+      display: none;
+      }
+
+
+/* brewing part */
+
+.brew{
+height: 464px;
+background-color: #edebe9;
+width: 100%;
+margin-top: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-bottom: 40px;
+padding-bottom: 30px;
+}
+.brew .top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+}
+.brew .top span{
+  color: #323232;
+  font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+  font-size: 24px;
+}
+
+.brew .top button{
+  margin-left: 535px;
+  width: auto;
+  color:rgb(0, 117, 74);
+  border: none;
+  background-color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  }
+.brew .main{  
+  width: 1094px; 
+  height: 340px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: url("/images/brew.jpg") center no-repeat;
+  background-size: 100%;
+  font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+  border-radius: 8px;
+  margin-left: 50px;
+
+}
+
+.brew .main button{
+  width: 200px;
+  height: 32px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+  border-style: none;
+  position: relative;
+  right: 10px;
+}
+
+/*footer*/
+
+.footer{
+  height: 888px;
+  background-color: #0e382c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .contain1{
+display: flex;
+flex-direction: row;
+color: white;
+width: 1140px;
+font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+font-size: 18px;
+}
+.footer .contain1 img{
+position: relative;
+left: 12px;
+margin-right: 130px;
+width: 62px;
+height: 62px;
+}
+
+.footer .contain1 .about ,.respos,.quicklink,.social,.download{
+  width: 166px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.footer .contain2 {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  width: 1116px !important;
+  justify-content: space-between;
+  flex-direction: row ;
+  align-items: center;
+  padding-top: 5px;
+  border-top-color :rgb(179, 179, 179);
+  border-top-style: solid;
+  border-top-width :1px;
+}
+
+.footer .contain2 .left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 17px;
+  margin-right: 10px;
+}
+
+.footer .contain2 .left h5{
+  padding-right: 17px;
+  margin-right: 10px;
+  border-right-color :rgb(179, 179, 179);
+border-right-style: solid;
+border-right-width :1px;
+color: white;
+font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+font-size: 12px
+}
+
+.footer .contain2 .right h5{
+  font-family: "SoDo Sans SemiBold",Helvetica,sans-serif;
+font-size: 9.6px;
+color: white;
+}

@@ -1,0 +1,200 @@
+.discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .discover h2 {
+    margin-right: 675px;
+  }
+  
+  .wrapper {
+    max-width: 1500px; /* Set maximum width for wrapper */
+    width: 100%;
+    position: relative;
+    height: 360px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto; /* Center the wrapper horizontally */
+  }
+  
+  .wrapper i {
+    height: 50px;
+    width: 50px;
+    background: rgb(118, 233, 118);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 0px;
+  }
+  
+  .wrapper i:first-child {
+    left: -22px;
+  }
+  
+  .wrapper i:last-child {
+    right: -33px;
+  }
+  
+  .wrapper .carousel {
+    max-width: 1200px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) ); /* Adjust the column width and subtract gap */
+    /* Add gap between slides */
+    justify-content: space-around;
+    margin: 0 auto; /* Center the carousel horizontally */
+    padding: 0px;
+   
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  
+  .carousel .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid;
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.176);
+    
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  .carousel .card img {
+  
+    height: 167px;
+    object-fit: cover;
+    overflow-clip-margin: content-box;
+    overflow-wrap: break-word;
+    overflow-x: clip;
+    overflow-y: clip;
+    vertical-align: middle;
+    border-radius: 8px;
+    margin-bottom: 95px;
+  }
+  
+  .carousel .card h4,
+  .carousel .card h3,
+  .carousel .card h5,
+  .carousel .card p {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .carousel .card .bottom {
+    display: flex;
+  }
+document.addEventListener("DOMContentLoaded", function() {
+    const carousel = document.querySelector(".carousel");
+    const arrowBtns = document.querySelectorAll(".wrapper i");
+    const slideWidth = carousel.querySelector(".card").offsetWidth; // Get width of a single slide
+
+    arrowBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            let scrollAmount = slideWidth; // Scroll one slide width at a time
+
+            carousel.scrollBy(btn.id === "left" ? -scrollAmount : scrollAmount, 0);
+        });
+    });
+});
+
+<div class="wrapper"> 
+    <i id="left" class="fa-solid  fas fa-angle-left"></i> 
+    <ul class="carousel"> 
+        <li class="card"> 
+        <img src="/images/bottom/1.webp" alt="img">
+        
+        
+        <h3>1 belgium chcocolate frapucchino</h3>
+        <h4>calories</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sunt.</p>
+        <div class="bottom">
+            <h5>price</h5>
+            <button>Add Item</button>
+        </div>
+ </li>
+ <li class="card"> 
+    <img src="/images/bottom/1.webp" alt="img">
+    
+    
+    <h3>2 belgium chcocolate frapucchino</h3>
+    <h4>calories</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sunt.</p>
+    <div class="bottom">
+        <h5>price</h5>
+        <button>Add Item</button>
+    </div>
+</li>      
+
+<li class="card"> 
+    <img src="/images/bottom/1.webp" alt="img">
+    
+    
+    <h3>3 belgium chcocolate frapucchino</h3>
+    <h4>calories</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sunt.</p>
+    <div class="bottom">
+        <h5>price</h5>
+        <button>Add Item</button>
+    </div>
+</li>
+<li class="card"> 
+    <img src="/images/bottom/1.webp" alt="img">
+    
+    
+    <h3> 4 belgium chcocolate frapucchino</h3>
+    <h4>calories</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sunt.</p>
+    <div class="bottom">
+        <h5>price</h5>
+        <button>Add Item</button>
+    </div>
+</li><li class="card"> 
+    <img src="/images/bottom/1.webp" alt="img">
+    
+    
+    <h3>5 belgium chcocolate frapucchino</h3>
+    <h4>calories</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sunt.</p>
+    <div class="bottom">
+        <h5>price</h5>
+        <button>Add Item</button>
+    </div>
+</li>
+    </ul> 
+    <i id="right" class="fa-solid fas fa-angle-right"></i> 
+</div> 
